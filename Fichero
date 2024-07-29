@@ -6,7 +6,7 @@ Descripción: Fichero c++
 
 #include <iostream>
 #include <string>
-#include <cmath> // Para usar la función pow
+#include <cmath>
 
 using namespace std;
 
