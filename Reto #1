@@ -1,1 +1,55 @@
+///////////////////////////////////////////////////////////////////////////////////////////*
+Autor: Jan Marco Muñoz Pineda
 
+
+*//////////////////////////////////////////////////////////////////////////////////////////
+
+
+#include <iostream>
+using namespace std;
+
+/*Tipo de Dato Abstracto para las Cafeteras*/
+class Cafetera {
+public:
+    virtual void Capuchino() = 0;
+    virtual void Tinto() = 0;
+};
+
+/*Implementación del TAD para OSTER*/
+class Oster : public Cafetera {
+public:
+    void Capuchino() {
+        cout << "Oster haciendo capuchino!!!" << endl;
+    }
+    void Tinto() {
+        cout << "Oster haciendo tinto!!!" << endl;
+    }
+};
+
+/*Implementación del TAD para HACEB*/
+class Haceb : public Cafetera {
+public:
+    void Capuchino() {
+        cout << "Haceb haciendo capuchino" << endl;
+    }
+    void Tinto() {
+        cout << "Haceb haciendo tinto" << endl;
+    }
+};
+
+int main() {
+    /*Creación objeto Oster*/
+    Cafetera* c_Oster = new Oster();
+    c_Oster->Capuchino();
+    c_Oster->Tinto();
+
+    /*Creación objeto Haceb*/
+    Cafetera* c_Haceb = new Haceb();
+    c_Haceb->Capuchino();
+    c_Haceb->Tinto();
+
+    delete c_Oster;
+    delete c_Haceb;
+
+    return 0;
+}
