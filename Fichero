@@ -5,10 +5,16 @@ Descripción: Fichero c++
 *************************************************************************/
 
 #include <iostream>
+#include <stack>
+#include <vector>
 #include <string>
 #include <cmath>
 
 using namespace std;
+
+class Character{
+public:
+    Character(string Name)
 
 int sumaRecursiva(int n) {
     if (n <= 1) {
@@ -55,6 +61,11 @@ bool lineal(string s, char c, int l) {
 }
 
 int main() {
+    stack<Character> Stack;
+    Character Roderick{"Roderick"};
+    Stack.push(Roderick);
+    Stack.push(move(Roderick));
+
     int sumaNumeros = sumaRecursiva(9);
     int resultadoCuadradosPares = cuadradosPares(33);
     int resultadoCuadradosPares2 = cuadradosPares2(33);
