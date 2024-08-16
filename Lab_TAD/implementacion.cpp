@@ -1,3 +1,9 @@
+/*************************************************************************
+Autor: Jan Marco Muñoz Pineda
+Fecha: 22/07/2024
+Descripción: Fichero c++
+*************************************************************************/
+
 #include <iostream>
 #include <vector>
 #include <string>
