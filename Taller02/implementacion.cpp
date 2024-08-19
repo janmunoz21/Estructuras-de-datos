@@ -1,7 +1,7 @@
 /*************************************************************************
 Autor: Jan Marco Muñoz Pineda
 Fecha: 19/08/2024
-Descripción: Fichero c++
+Descripción: Implementación Taller 02 c++
 *************************************************************************/
 
 #include <iostream>
