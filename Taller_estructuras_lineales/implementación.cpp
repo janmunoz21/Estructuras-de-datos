@@ -1,3 +1,10 @@
+/***********************************************************
+* Fecha: 26 de agosto de 2024
+* Autor: Jan Marco Muñoz Pineda
+* Tema: Taller 02 Estructuras lineales
+* Estructuras de datos
+***********************************************************/
+
 #include <iostream>
 #include <vector>
 #include <string>
