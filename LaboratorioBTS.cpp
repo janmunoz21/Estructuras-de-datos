@@ -24,25 +24,25 @@ struct Nodo *nuevoNodo(int dato){ //Estructura para crear nuevo arbol
 void preOrdenT(struct Nodo *raiz){ //Se recibe el arbol
 	if (raiz==NULL) //Mientras el valor en el nodo no sea nulo realice lo siguiente
 		return;
-	cout << raiz->dato << "->"; 
+	cout << raiz->dato << "->";  //Imprime primero la raiz, izquierda y por ultimo derecha
 	preOrdenT(raiz->left);
 	preOrdenT(raiz->right);
 }
 
 /******* Postorder *********/
 void postOrdenT(struct Nodo *raiz){ //Se recibe arbol
-	if (raiz==NULL)
+	if (raiz==NULL) //Mientras el valor en el nodo no sea nulo realice lo siguiente
 		return;
-	postOrdenT(raiz->left); // Imprime de primero izquierda, derecha y luego raiz
+	postOrdenT(raiz->left); //Imprime de primero izquierda, derecha y por ultimo raiz
 	postOrdenT(raiz->right);
 	cout << raiz->dato << "->"; 
 }
 
 /******* Inorder *********/
 void inOrdenT(struct Nodo *raiz){ //Se recibe el arbol
-	if (raiz==NULL)
+	if (raiz==NULL) //Mientras el valor en el nodo no sea nulo realice lo siguiente
 		return;
-	inOrdenT(raiz->left);
+	inOrdenT(raiz->left); //Imprime primero izquierda, raiz y por ultimo la derecha
 	cout << raiz->dato << "->"; 
 	inOrdenT(raiz->right);
 }
