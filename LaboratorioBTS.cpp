@@ -122,6 +122,7 @@ int main(){
 	cout << "1. Preorden." << endl;
 	cout << "2. Postorden." << endl;
 	cout << "3. Inorden." << endl;
+	cout << "Opcion: ";
 	cin >> opcion;
 	
 	switch (opcion){
