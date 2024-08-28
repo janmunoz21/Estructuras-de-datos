@@ -112,6 +112,9 @@ int main(){
 	arbol1 = insertarBST(arbol1, 23);
 	arbol1 = insertarBST(arbol1, 48);
 	arbol1 = insertarBST(arbol1, 27);
+	arbol1 = insertarBST(arbol1, 17);
+	arbol1 = insertarBST(arbol1, 32);
+	arbol1 = insertarBST(arbol1, 72);
 	
 	int opcion;
 	
