@@ -52,31 +52,10 @@ classDiagram
         +void setY(float y)
         +void setZ(float z)
     }
-
-    class Sistema {
-        -deque~Objeto~ objetos
-        +Sistema()
-        +deque~Objeto~ getObjetos()
-        +void setObjetos(deque~Objeto~ o)
-        +int buscarObjeto(string nombre)
-        +bool nombreValido(string_view nombre)
-        +bool numeroNaturalValido(string_view numero)
-        +bool numeroEnteroValido(string_view numero)
-        +bool validarArchivo(string ruta)
-        +void crearAristas(Cara cara)
-        +void cargarObjeto(string ruta)
-        +void listado()
-        +void agregarVerticesCara(deque~Vertice~ vertices, Cara cara, int i1, int i2, int i3, int i4)
-        +void envolvente(Objeto objeto)
-        +void envolvente()
-        +void descargar(Objeto objeto)
-        +void guardar(Objeto objeto, string nombre)
-    }
     
     Vertice --> Arista
     Vertice --> Cara
     Arista --> Cara
     Cara --> Objeto
     Vertice --> Objeto
-    Objeto --> Sistema
 ```
