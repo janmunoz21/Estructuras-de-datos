@@ -1,6 +1,6 @@
 Repositorio de Jan Marco Muñoz para la clase de Estructuras de datos
 
-'''mermaid
+```mermaid
 classDiagram
     class Arista {
         -Vertice vertice1
@@ -79,3 +79,4 @@ classDiagram
     Cara --> Objeto
     Vertice --> Objeto
     Objeto --> Sistema
+```
