@@ -1,7 +1,7 @@
 /*************************************************************************
 Autor: Jan Marco Muñoz Pineda
 Fecha: 06/11/2024
-Descripción: Actividad grafos
+Descripción: Algoritmo de Dijkstra
 *************************************************************************/
 
 #include <iostream>
@@ -9,7 +9,7 @@ Descripción: Actividad grafos
 using namespace std;
 
 int main{
-	int matrizDijkstra[6][6]= {{0, 1, 7, 6, 0, 0, 0}, {1, 0, 9, 0, 0, 3, 0}, {7, 9, 0, 0, 0, 0, 1}, {6, 0, 0, 0, 2, 0, 0}, {0, 0, 0, 2, 0, 0, 5},
+	int m_Matrix[6][6]= {{0, 1, 7, 6, 0, 0, 0}, {1, 0, 9, 0, 0, 3, 0}, {7, 9, 0, 0, 0, 0, 1}, {6, 0, 0, 0, 2, 0, 0}, {0, 0, 0, 2, 0, 0, 5},
 	{0, 3, 0, 0, 0, 0, 5}, {0, 0, 1, 0, 5, 3, 0}}
 }
 
@@ -20,7 +20,7 @@ public:
 	list< V > Levels( int seed );
 	protected:
 	vector< V > m_Vertices;
-	vector< std::vector< C > > m_Matrix;
+	vector< vector< C > > m_Matrix;
 	map< int, std::map< int, C > > m_Matrix;
 };
 
