@@ -1,3 +1,9 @@
+/*************************************************************************
+Autor: Jan Marco Muñoz Pineda
+Fecha: 06/11/2024
+Descripción: Actividad grafos
+*************************************************************************/
+
 #include <iostream>
 
 using namespace std;
@@ -36,8 +42,8 @@ template< class V, class C >
 		for( int i = 0; i < this->m_Vertices.size( ); ++i ){
 			if( this->m_Matrix.ElementExists( n, i ) )
 			q.push( i );
-		} // rof
+		} // for
 	
-	} // elihw
+	} // while
 	return( res );
 }
